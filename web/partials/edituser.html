@@ -1,0 +1,36 @@
+<div class="container" ng-controller="UserGistController">
+
+
+
+    <form ng-submit="saveGist()">
+        <!-- NAME -->
+
+        <div id="name-group" class="form-group">
+            <label>Description</label>
+            <input type="text" name="title" class="form-control" placeholder="Title" ng-model="formData.description">
+            <span class="help-block"></span>
+        </div>
+
+        <!-- SUPERHERO NAME-->
+        <div id="content-group" class="form-group">
+            <label>Notes</label>
+            <textarea rows="10" name="content" placeholder="Notes" class="form-control" ng-model="formData.content"/>
+            <span class="help-block"></span>
+        </div>
+
+        <!-- SUBMIT BUTTON -->
+        <div>
+            <button type="submit" class="btn btn-success btn-lg" >Submit</button>
+            <button type="cancel" class="btn btn-cancel btn-lg">Cancel</button>
+        </div>
+    </form>
+
+
+
+    <pre>
+        {{message}}
+    </pre>
+
+
+
+</div>

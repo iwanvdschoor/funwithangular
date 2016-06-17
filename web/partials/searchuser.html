@@ -1,0 +1,18 @@
+
+<div class="container" ng-controller="UserListController">
+    <form>
+    <label>Search:</label> <input type="text" class="form-control" ng-model="q" /> <button ng-click="getData()">Search</button>
+
+        <BR>
+    <label>Select a User:</label>
+    <select class="form-control" size="20" ng-model="user" ng-change="editUser(user)">
+
+        <!-- investigated using the ng-options param, which is higher performance, and uses less memory, but could not
+        get that to work -->
+
+        <option ng-repeat="user in users" value="{{user.login}}">
+            {{user.login}}
+        </option>
+    </select>
+    </form>
+</div>
