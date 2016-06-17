@@ -18,6 +18,7 @@
   "scripts": {
     "pretest": "npm install",
     "test": "karma start karma.conf.js --single-run",
+    "prestart" : "npm install",
     "start": "node server.js"
   }
 }

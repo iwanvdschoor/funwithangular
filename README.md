@@ -10,3 +10,10 @@ npm test
 ```
 
 This will install the required dependencies and run the unittest.
+
+```
+npm start
+```
+
+this will run the project locally. The files from the web directory can be deployed on any webserver to review
+the project as well, it does not need node.js.
